@@ -6,7 +6,7 @@ import streamlit as st
 
 !pip install seaborn
 
-!unzip "/content/archive (2).zip"
+
 
 df = pd.read_csv('Heart_Disease_Prediction.csv')
 
