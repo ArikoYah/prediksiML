@@ -11,7 +11,6 @@ import pandas as pd
 import streamlit as st
 
 
-!unzip "/content/archive (2).zip"
 
 df = pd.read_csv('Heart_Disease_Prediction.csv')
 
