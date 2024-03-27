@@ -4,6 +4,13 @@ import pandas as pd
 import streamlit as st
 import seaborn as sns
 
+# Install seaborn jika belum terinstal
+try:
+    import seaborn as sns
+except ImportError:
+    print("Instalasi seaborn...")
+    !pip install seaborn
+    import seaborn as sns
 
 df = pd.read_csv('Heart_Disease_Prediction.csv')
 
