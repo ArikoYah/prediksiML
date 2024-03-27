@@ -24,4 +24,4 @@ jobs:
         pip install -r requirements.txt
         
     - name: Run script
-      run: python your_script.py  # Ganti 'your_script.py' dengan nama file Anda
+      run: python your_untitled4(2).py  # Ganti 'your_script.py' dengan nama file Anda
