@@ -7,6 +7,10 @@ import streamlit as st
 import seaborn as sns
 import seaborn.objects as so
 import matplotlib.pyplot as plt
+import subprocess
+
+# Jalankan perintah 'pip install numpy'
+subprocess.run(['pip', 'install', 'numpy'])
 
 
 
