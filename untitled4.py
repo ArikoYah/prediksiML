@@ -2,7 +2,7 @@
 
 import pandas as pd
 import streamlit as st
-
+import seaborn as sns
 
 
 df = pd.read_csv('Heart_Disease_Prediction.csv')
