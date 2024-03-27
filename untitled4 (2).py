@@ -3,7 +3,8 @@
 
 import pandas as pd
 import streamlit as st
-
+import seaborn as sns
+import matplotlib.pyplot as plt
 !pip install seaborn
 
 
@@ -13,9 +14,6 @@ df = pd.read_csv('Heart_Disease_Prediction.csv')
 df.head()
 
 df.info()
-
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 sns.countplot(x=df['Heart Disease'],hue='Sex',data=df)
 
