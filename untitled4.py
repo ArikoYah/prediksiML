@@ -3,15 +3,8 @@
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
-import subprocess
-
-# Install seaborn jika belum terinstal
-try:
-    import seaborn as sns
-except ImportError:
-    print("Instalasi seaborn...")
-    subprocess.call(['pip', 'install', 'seaborn'])
-    import seaborn as sns
+import seaborn as sns
+!pip install seaborn
 
 # Sekarang seaborn sudah terinstal dan dapat digunakan
 df = pd.read_csv('Heart_Disease_Prediction.csv')
