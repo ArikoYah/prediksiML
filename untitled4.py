@@ -2,24 +2,14 @@
 
 import pandas as pd
 import streamlit as st
-import subprocess
-
-# Install seaborn jika belum terinstal
-try:
-    import seaborn as sns
-except ImportError:
-    print("Instalasi seaborn...")
-    subprocess.call(['pip', 'install', 'seaborn'])
-    import seaborn as sns
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 df = pd.read_csv('Heart_Disease_Prediction.csv')
 
 df.head()
 
 df.info()
-
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 sns.countplot(x=df['Heart Disease'],hue='Sex',data=df)
 
